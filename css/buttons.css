@@ -1,0 +1,24 @@
+.message-send-chat{
+    width: 95%;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.message-send-chat:focus{
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.send-chat{
+    width: 4.4%;
+    border: 0;
+    border-radius: 10px 10px 0px 10px;
+    background:  linear-gradient(to right, red, orange);
+}
+
+.send-chat:hover{
+    background:  linear-gradient(to right, rgb(255, 39, 39), rgb(255, 181, 44));
+}
+
+.send-chat:active{
+    background:  linear-gradient(to right, rgb(255, 89, 89), rgb(255, 209, 122));
+}

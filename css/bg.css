@@ -1,0 +1,10 @@
+.chat-main{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.message-send-show{
+    /* height: 574px; */
+    height: auto;
+    background: linear-gradient(to right, pink, white);
+}
