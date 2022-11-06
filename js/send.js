@@ -14,6 +14,8 @@ send_chat.addEventListener('click', () => {
                         }
                     } else if(message_send_chat.value == '20/10') {
                         mess.message('left', "Nhân ngày 20/10, chúc một nửa thế giới luôn duyên dáng, xinh đẹp và thành công trong cuộc sống");
+                    } else if(message_send_chat.value == 'Type Message') {
+                        mess.message('left', "You copy:))???");
                     } else if(message_send_chat.value == 'version') {
                         mess.message('left', "'version: 1.0.1' 'Bots : true' 'Name : Mark Bots'");
                     } else if(message_send_chat.value == 'How are you?') {
@@ -52,10 +54,13 @@ send_chat.addEventListener('click', () => {
     }
 })
 
+let message = '';
+
 addEventListener('keypress', ({keyCode}) => {
     switch (keyCode) {
         case 13:
             if(message_send_chat.value != '') {
+                message = message_send_chat.value;
                 mess.message('right', message_send_chat.value);
                         if(!copyMessageBots) {
                             if(message_send_chat.value == 'Are you finish?') {
@@ -70,6 +75,10 @@ addEventListener('keypress', ({keyCode}) => {
                                 }
                             } else if(message_send_chat.value == '20/10') {
                                 mess.message('left', "Nhân ngày 20/10, chúc một nửa thế giới luôn duyên dáng, xinh đẹp và thành công trong cuộc sống");
+                            } else if(message_send_chat.value == 'Type Message') {
+                                mess.message('left', "You copy:))???");
+                            } else if(message_send_chat.value == String('Loves')) {
+                                mess.message('left', "Love?, i don't know love, what is love?");
                             } else if(message_send_chat.value == 'version') {
                                 mess.message('left', "'version: 1.0.1' 'Bots : true' 'Name : Mark Bots'");
                             } else if(message_send_chat.value == 'How are you?') {
